@@ -18,4 +18,11 @@ ul, ol {
 
 button {
   border: none;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  display: block;
+  margin: auto;
 }/*# sourceMappingURL=services.css.map */
