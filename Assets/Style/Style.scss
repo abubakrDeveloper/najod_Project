@@ -40,8 +40,75 @@
         color: $color;
     }
 
-    .site{
-        
-    }
+    .site {
+        .header {
+            .nav {
+                display: flex;
+                border: 2px solid white;
+                justify-content: space-between;
+                padding: 60px 0;
 
-    
+                img {
+                    width: 106px;
+                    height: 43px;
+                }
+
+                ul {
+                    display: flex;
+                    gap: 35px;
+                    @include text(16px, 500, white);
+                    align-items: center;
+
+                    .nav-header-menu {
+                        border: 1px solid;
+                        border-radius: 75px;
+                    }
+
+                    li {
+                        opacity: 0.3;
+
+
+                        button {
+                            padding: 5px;
+                            border-radius: 75px;
+                            border: none;
+                            background: transparent;
+
+                            p {
+                                @include text(16px, 500, white);
+                                line-height: 23px;
+                                opacity: 0.4;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .header-banner {
+                height: 415px;
+                background-image: url(../Images//Images/Rectangle\ 11.png);
+                position: relative;
+
+                .header-banner-btns {
+                    position: absolute;
+                    top: -20px;
+                    left: 150px;
+                    display: flex;
+                    gap: 5px;
+
+
+                    button {
+                        @extend .flex;
+                        width: 163px;
+                        height: 42px;
+                        border-radius: 50px;
+                        border: 1px solid;
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+
+                    
+                }
+            }
+        }
+    }
