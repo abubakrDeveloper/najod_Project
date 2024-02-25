@@ -1,0 +1,47 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        max-width: 1550px;
+        background: #1C1C1E;
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul,
+    ol {
+        list-style: none;
+    }
+
+    button {
+        border: none
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        width: 1440px;
+        margin: auto;
+    }
+
+    @mixin text ($size, $weight, $color) {
+        font-style: $size;
+        font-weight: $weight;
+        color: $color;
+    }
+
+    .site{
+        
+    }
+
+    
