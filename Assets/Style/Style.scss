@@ -1,100 +1,105 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    body {
-        max-width: 1550px;
-        background: #1C1C1E;
+body {
+    max-width: 1550px;
+    background: #1C1C1E;
+    
+}
 
-    }
+a {
+    text-decoration: none;
+}
 
-    a {
-        text-decoration: none;
-    }
+ul,
+ol {
+    list-style: none;
+}
 
-    ul,
-    ol {
-        list-style: none;
-    }
+button {
+    border: none
+}
 
-    button {
-        border: none
-    }
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    .flex {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.container {
+    max-width: 1440px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    // background-color: antiquewhite;
+}
 
-    .container {
-        width: 1440px;
-        margin: auto;
-    }
+@mixin text ($size, $weight, $color) {
+    font-style: $size;
+    font-weight: $weight;
+    color: $color;
+}
 
-    @mixin text ($size, $weight, $color) {
-        font-style: $size;
-        font-weight: $weight;
-        color: $color;
-    }
-
-    .site {
-        .header {
-            .nav {
+.site {
+    .header {
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 60px 0;
+            
+            img {
+                width: 106px;
+                height: 43px;
+            }
+            
+            ul {
                 display: flex;
-                border: 2px solid white;
-                justify-content: space-between;
-                padding: 60px 0;
-
-                img {
-                    width: 106px;
-                    height: 43px;
+                gap: 35px;
+                @include text(16px, 500, white);
+                align-items: center;
+                
+                .nav-header-menu {
+                    border: 1px solid;
+                    border-radius: 75px;
                 }
-
-                ul {
-                    display: flex;
-                    gap: 35px;
-                    @include text(16px, 500, white);
-                    align-items: center;
-
-                    .nav-header-menu {
-                        border: 1px solid;
+                
+                
+                li {
+                    opacity: 0.3;
+                    
+                    
+                    button {
+                        padding: 5px;
                         border-radius: 75px;
-                    }
-
-                    li {
-                        opacity: 0.3;
-
-
-                        button {
-                            padding: 5px;
-                            border-radius: 75px;
-                            border: none;
-                            background: transparent;
-
-                            p {
-                                @include text(16px, 500, white);
-                                line-height: 23px;
-                                opacity: 0.4;
-                            }
+                        border: none;
+                        background: transparent;
+                        
+                        p {
+                            @include text(16px, 500, white);
+                            line-height: 23px;
+                            opacity: 0.4;
                         }
                     }
                 }
             }
-
-            .header-banner {
-                height: 415px;
-                background-image: url(../Images//Images/Rectangle\ 11.png);
-                position: relative;
-
-                .header-banner-btns {
+        }
+    }
+        
+        .hero {
+            height: 415px;
+            background-image: url(../Images//Images/Rectangle\ 11.png);
+            position: relative;
+            
+                .hero-btns {
                     position: absolute;
                     top: -20px;
                     left: 150px;
                     display: flex;
                     gap: 5px;
+                    
 
 
                     button {
@@ -105,10 +110,35 @@
                         border: 1px solid;
                         font-size: 16px;
                         font-weight: 600;
+                        align-items: center;
+                        display: flex;
+                        gap: 5px;
                     }
-
-                    
+                                        
                 }
+
+            
+
             }
-        }
+
+            .hero_bottom_box {
+                width: 1200px;
+                height:00px;
+                margin: auto;
+                display: flex;
+                justify-content: space-around;
+                margin-top: 40px;
+            }
+            .hero_end_text {
+                color: aliceblue;
+                width: 650px;
+            }
+            .hero_end_btn {
+                width: 50px;
+                height: 70px;
+                background-color: #fcfcfc7b;
+                border-radius: 30px;
+                border: 2px solid #fff;
+                margin: 70px;
+            }
     }

@@ -22,20 +22,21 @@ button {
   border: none;
 }
 
-.flex, .site .header .header-banner .header-banner-btns button {
+.flex, .site .hero .hero-btns button {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
+  display: block;
   margin: auto;
 }
 
 .site .header .nav {
   display: flex;
-  border: 2px solid white;
   justify-content: space-between;
   padding: 60px 0;
 }
@@ -71,23 +72,46 @@ button {
   line-height: 23px;
   opacity: 0.4;
 }
-.site .header .header-banner {
+.site .hero {
   height: 415px;
   background-image: url(../Images//Images/Rectangle\ 11.png);
   position: relative;
 }
-.site .header .header-banner .header-banner-btns {
+.site .hero .hero-btns {
   position: absolute;
   top: -20px;
   left: 150px;
   display: flex;
   gap: 5px;
 }
-.site .header .header-banner .header-banner-btns button {
+.site .hero .hero-btns button {
   width: 163px;
   height: 42px;
   border-radius: 50px;
   border: 1px solid;
   font-size: 16px;
   font-weight: 600;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+.site .hero_bottom_box {
+  width: 1200px;
+  height: 0px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.site .hero_end_text {
+  color: aliceblue;
+  width: 650px;
+}
+.site .hero_end_btn {
+  width: 50px;
+  height: 70px;
+  background-color: rgba(252, 252, 252, 0.4823529412);
+  border-radius: 30px;
+  border: 2px solid #fff;
+  margin: 70px;
 }/*# sourceMappingURL=Style.css.map */
